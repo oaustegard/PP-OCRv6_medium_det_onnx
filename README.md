@@ -1,14 +1,18 @@
 > **Mirror of [PaddlePaddle/PP-OCRv6_medium_det_onnx](https://huggingface.co/PaddlePaddle/PP-OCRv6_medium_det_onnx)** on Hugging Face.
-> The model weights `inference.onnx` (~62 MB) are published as a **GitHub Release asset**, not committed to git.
+>
+> The model weights `inference.onnx` (~59 MB) are committed as a plain git blob **and** published as a GitHub Release asset, so either fetch path works.
 >
 > **Get the model:**
 > ```bash
-> # one-liner, no clone needed:
+> # portable (served by raw.githubusercontent.com; works behind restrictive egress allowlists):
+> curl -fL https://raw.githubusercontent.com/oaustegard/PP-OCRv6_medium_det_onnx/main/inference.onnx -o inference.onnx
+>
+> # release asset (where release-assets.githubusercontent.com is reachable):
 > curl -fL https://github.com/oaustegard/PP-OCRv6_medium_det_onnx/releases/latest/download/inference.onnx -o inference.onnx
-> # or, from a clone:
-> scripts/fetch_model.sh
+>
+> # or, from a clone: scripts/fetch_model.sh
 > ```
-> The config files (`inference.json`, `inference.yml`) are in the repo. License: Apache-2.0. See `NOTICE` for provenance.
+> Config files (`inference.json`, `inference.yml`) are in the repo. License: Apache-2.0. See `NOTICE` for provenance.
 
 ---
 

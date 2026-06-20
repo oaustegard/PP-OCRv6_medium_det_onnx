@@ -10,10 +10,11 @@ Original author: PaddlePaddle / PaddleOCR team
 License: Apache License 2.0 (see LICENSE)
 Reference: arXiv:2606.13108
 
-The model weights (inference.onnx, ~62 MB) are distributed as a GitHub
-Release asset rather than committed to git, to keep the repository clone
-small and avoid Git LFS. See scripts/fetch_model.sh or the README for
-retrieval.
+The model weights (inference.onnx, ~59 MB) are committed as a plain
+(non-LFS) git blob AND attached as a GitHub Release asset. raw.githubusercontent.com
+serves the committed blob directly (portable across restrictive egress
+allowlists); the release asset is an alternative where that host is reachable.
+See scripts/fetch_model.sh or the README for retrieval.
 
 No modifications have been made to the model. The text config files
 (inference.json, inference.yml) are copied verbatim from upstream.
