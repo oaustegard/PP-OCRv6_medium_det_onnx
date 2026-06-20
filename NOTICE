@@ -1,0 +1,19 @@
+PP-OCRv6_medium_det_onnx — redistribution
+=========================================
+
+This repository mirrors the ONNX export of PaddleOCR's PP-OCRv6 medium
+text-line detection model.
+
+Upstream source:
+  https://huggingface.co/PaddlePaddle/PP-OCRv6_medium_det_onnx
+Original author: PaddlePaddle / PaddleOCR team
+License: Apache License 2.0 (see LICENSE)
+Reference: arXiv:2606.13108
+
+The model weights (inference.onnx, ~62 MB) are distributed as a GitHub
+Release asset rather than committed to git, to keep the repository clone
+small and avoid Git LFS. See scripts/fetch_model.sh or the README for
+retrieval.
+
+No modifications have been made to the model. The text config files
+(inference.json, inference.yml) are copied verbatim from upstream.
